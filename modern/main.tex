@@ -29,7 +29,7 @@
 %============================================================================%
 
 %we use article class because we want to fully customize the page and dont use a cv template
-\documentclass[10pt,A4]{article}	
+\documentclass[10pt,A4]{extarticle}	
 
 
 %----------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@
 
 % line spacing
 \usepackage{setspace}
-\setstretch{1.2}
+\setstretch{1.16}
 
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT  DEFINITIONS
@@ -243,7 +243,7 @@
 %
 \newcommand{\cvevent}[4]
 {
-	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.9cm} x{3.8cm}}
+	\begin{tabular*}{1\textwidth}{p{2cm}  p{11.2cm} x{3.8cm}}
  \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
 
 	\end{tabular*}
@@ -251,7 +251,7 @@
 \textcolor{softcol}{\hrule}
 \vspace{6pt}
 	\ifthenelse{\equal{#4}{}}{}{
-		\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+		\begin{tabular*}{1\textwidth}{p{2cm} p{14.9cm}}
 			& \foreach \x in {#4} {
 				\larrow{bgcol}~\x\par\vspace{3pt}
 			}
@@ -310,7 +310,7 @@
 
 \begin{figure}[H]
 \begin{flushright}
-	\includegraphics[clip,width=0.2\linewidth]{myfoto.jpg}	%trimming relative to image size!
+	\includegraphics[clip,width=0.18\linewidth]{myfoto.jpg}	%trimming relative to image size!
 \end{flushright}
 \end{figure}
 
@@ -327,7 +327,7 @@
 %	META SECTION
 %----------------------------------------------------------------------------------------
 
-\vspace{-114pt}
+\vspace{-110pt}
 
 \metasection{Fields:}{Software Architecture, Distributed Systems, Devops} 
 \metasection{Programming:}{C++, C\#, Python, Javascript, Rust}
@@ -349,11 +349,10 @@
 %
 %============================================================================%
 
+\vspace{-6pt}
 \textcolor{softcol}{\hrule}
 \vspace{12pt}
-Experienced software engineer, passionate about creating scalable and performant solutions. Proud of writing clean, maintainable, and efficient code, and eager to expand his knowledge by using new tools and technologies.
-
-Team player who values colleagues' ideas and insights, and a valuable addition to any organization.
+Experienced software engineer, passionate about designing scalable and performant solutions. Proud of writing clean, maintainable, and efficient code, and eager to expand his knowledge by using new tools and technologies. Team player who values colleagues' ideas and insights, and a valuable addition to any organization.
 \vspace{12pt}
 
 %---------------------------------------------------------------------------------------
@@ -363,18 +362,20 @@ Team player who values colleagues' ideas and insights, and a valuable addition t
 
 %
 \cvevent{2021 -}{Senior Software Engineer}{OMP}{
-	{Designed, developed and maintained a scalable, fault tolerant, self healing caching service used to speedup C++ compilation},
+	{Designed a scalable and fault tolerant caching service to speedup C++ compilation. It's used by 100+ developers and handles 5 terabytes daily, with an uptime of 99.99\% after 1 year},
+	{Managed the product backlog and guided the development of observability features in the aforementioned caching service},
 	{Researched how to refactor OMP's supply chain planning solution to scale up and handle the use cases of the largest manufacturing companies in the world},
-	{Managed a project's backlog},
-	{Led a taskforce to investigate a technical issue in our infrastructure}
+	{Led a taskforce to investigate and address a performance degradation in a VDI server cluster, coordinated efforts and provided guidance to the developers. Made data-driven decisions on how to find the root cause of the problem and presented proposals outlining how to mitigate or work around the identified issues},
+	{Onboarded and coached developers, mentoring them to become highly skilled programmers and overall better engineers}
 }
 
 %\textcolor{softcol}{\hrule}
 
 %
 \cvevent{2018 - 2021}{Software Engineer}{OMP}{
-	{Designed and implemented a high performance event logging API and introduced observability features to our products},
-	{Created CI pipelines}
+	{Designed a C++ logging and profiling framework after conducting user interviews to gather requirements. Led technical discussions among my team and had the proposed design validated by software architects},
+	{Performed code reviews to ensure my team delivered high-quality code compliant with the requirements},
+	{Established modern continuous integration infrastructure to provide and scalable workflow for all C++ development and quality assurance teams}
 }
 
 %\textcolor{softcol}{\hrule}
@@ -387,8 +388,9 @@ Team player who values colleagues' ideas and insights, and a valuable addition t
 
 %\textcolor{softcol}{\hrule}
 
-%Portugal
+%
 \cvevent{2015 - 2017}{Software Engineer}{Altitude Software}{
+	{Invented a highly performant and scalable algorithm that used matrix multiplications for matchmaking telephony agents against target call center contacts, depending on language profile, availability, priority, etc.},
 	{Worked in the R\&D team that develops the back-end of Altitude's distributed call center management software suite capable of handling thousands of calls per minute}
 }
 
@@ -398,8 +400,6 @@ Team player who values colleagues' ideas and insights, and a valuable addition t
 \cvevent{2014 - 2015}{Apprentice Systems Administrator}{INESC-ID}{
 	{Set up automatic installation and configuration of an on-premises machine cluster. Solved technical issues and provided user support}
 }
-
-\pagebreak
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION SECTION
