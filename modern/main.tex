@@ -96,7 +96,7 @@
 
 %customize entries left, center and right
 \lhead{}
-\chead{ \small{Pedro Moreira$\cdot$ Senior Software Engineer $\cdot$  Gent, Belgium  $\cdot$  \textcolor{sectcol}{\textbf{pedrogrmoreira@gmail.com}}  $\cdot$ +32 476 86 52 11}}
+\chead{ \small{Pedro Moreira $\cdot$ Software Architect $\cdot$  Gent, Belgium  $\cdot$  \textcolor{sectcol}{\textbf{pedrogrmoreira@gmail.com}}  $\cdot$ +32 476 86 52 11}}
 \rhead{}
 
 
@@ -243,13 +243,14 @@
 %
 \newcommand{\cvevent}[4]
 {
+\vspace{-4pt}
 	\begin{tabular*}{1\textwidth}{p{2cm}  p{11.2cm} x{3.8cm}}
- \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
+ \textcolor{bgcol}{#1}& \textbf{#2} & \textcolor{sectcol}{#3}
 
 	\end{tabular*}
-\vspace{-12pt}
+\vspace{-2pt}
 \textcolor{softcol}{\hrule}
-\vspace{6pt}
+\vspace{4pt}
 	\ifthenelse{\equal{#4}{}}{}{
 		\begin{tabular*}{1\textwidth}{p{2cm} p{14.9cm}}
 			& \foreach \x in {#4} {
@@ -257,7 +258,7 @@
 			}
 		\end{tabular*}
 	}
-\vspace{-4pt}
+\vspace{8pt}
 }
 
 % creates a stretched box as 
@@ -353,7 +354,7 @@
 \vspace{-6pt}
 \textcolor{softcol}{\hrule}
 \vspace{12pt}
-Experienced software engineer, passionate about designing scalable and performant solutions. Proud of writing clean, maintainable, and efficient code, and eager to expand his knowledge by using new tools and technologies. Team player who values colleagues' ideas and insights, and a valuable addition to any organization.
+Experienced software engineer, passionate about designing scalable and flexible solutions. Proud of writing clean, maintainable, and efficient code, and eager to expand his knowledge by using new tools and technologies. Team player who values colleagues' ideas and insights, and a valuable addition to any organization.
 \vspace{12pt}
 
 %---------------------------------------------------------------------------------------
@@ -362,11 +363,17 @@ Experienced software engineer, passionate about designing scalable and performan
 \cvsection{Experience}
 
 %
-\cvevent{2021 -}{Senior Software Engineer}{OMP}{
+\cvevent{2023 -}{Sofware Architect}{Trioscope}{
+	{Hired, managed and mentored the engineering team.},
+	{Gathered functional and technical requirements and proposed the product roadmap to executive management.},
+	{Designed and implemented a VFX compositing engine with GPU accelerated image processing, 3D rendering and AI workloads.},
+	{Established modern engineering practices with design validation sessions, code reviews, testing, CI \& CD.}
+}
+
+\cvevent{2021 - 2023}{Senior Software Engineer}{OMP}{
 	{Designed a scalable and fault tolerant caching service to speedup C++ compilation. It's used by 100+ developers and handles 5 terabytes daily, with an uptime of 99.99\% after 1 year},
 	{Managed the product backlog and guided the development of observability features in the aforementioned caching service},
 	{Researched how to refactor OMP's supply chain planning solution to scale up and handle the use cases of the largest manufacturing companies in the world},
-	{Led a taskforce to investigate and address a performance degradation in a VDI server cluster, coordinated efforts and provided guidance to the developers. Made data-driven decisions on how to find the root cause of the problem and presented proposals outlining how to mitigate or work around the identified issues},
 	{Onboarded and coached developers, mentoring them to become highly skilled programmers and overall better engineers}
 }
 
@@ -389,17 +396,12 @@ Experienced software engineer, passionate about designing scalable and performan
 
 %\textcolor{softcol}{\hrule}
 
+\pagebreak
+
 %
 \cvevent{2015 - 2017}{Software Engineer}{Altitude Software}{
 	{Invented a highly performant and scalable algorithm that used matrix multiplications for matchmaking telephony agents against target call center contacts, depending on language profile, availability, priority, etc.},
 	{Worked in the R\&D team that develops the back-end of Altitude's distributed call center management software suite capable of handling thousands of calls per minute}
-}
-
-%\textcolor{softcol}{\hrule}
-
-%
-\cvevent{2014 - 2015}{Apprentice Systems Administrator}{INESC-ID}{
-	{Set up automatic installation and configuration of an on-premises machine cluster. Solved technical issues and provided user support}
 }
 
 %---------------------------------------------------------------------------------------
@@ -434,8 +436,7 @@ Experienced software engineer, passionate about designing scalable and performan
 \cvevent{}{Recently read}{}{
 	{Kubernetes: Up and Running, 3rd Edition, \textit{by Brendan Burns, Joe Beda, Kelsey Hightower, Lachlan Evenson}},
 	{Designing Data-Intensive Applications, \textit{by Martin Kleppmann}},
-	{Software Architecture: The Hard Parts, \textit{by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani}},
-	{Designing Distributed Systems, \textit{by Brendan Burns}}
+	{Software Architecture: The Hard Parts, \textit{by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani}}
 }
 
 %---------------------------------------------------------------------------------------
